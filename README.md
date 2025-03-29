@@ -5,8 +5,8 @@ what I did:
 - trained model on custom parametrized augmentation train dataset
 - trained model on original train dataset
 - compared two models by predicting on test dataset
-- 
-## Results summary
+
+## Results Summary
 
 | Metric | Original Model | Augmented Model |
 |--------|----------------|-----------------|
