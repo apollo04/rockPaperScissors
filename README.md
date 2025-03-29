@@ -34,7 +34,7 @@ what I did:
 ![F1 Curve - Augmented](yolov5/runs/val/aug/F1_curve.png)
 
 ## Conclusion
-The model trained on original dataset showed better result, its max mAPe is around 0.96 (see results.csv file), and for the model trained on augmented dataset is around 0.91. The reason for such difference between the models' perfomances is my custom parametrized augmentation was too much, I chose agressive augmentation such as bluring is 0.3, rotation degree is 120 degrees, therefore such augmentation to the train dataset caused change in distribution in original set. Additionally, decrease in recall and precision for the augmented model indicates that the model is making more false positives and false negatives. 
+The model trained on original dataset showed better result, its max mAP@0.5 is around 0.96 (see results.csv file), and for the model trained on augmented dataset is around 0.91. The reason for such difference between the models' perfomances is my custom parametrized augmentation was too much, I chose agressive augmentation such as bluring is 0.3, rotation degree is 120 degrees, therefore such augmentation to the train dataset caused change in distribution in original set. Additionally, decrease in recall and precision for the augmented model indicates that the model is making more false positives and false negatives. 
 
 ##  How to run
 original dataset:
