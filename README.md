@@ -43,9 +43,9 @@ The model trained on original dataset showed better result, its max mAP@0.5 is a
 
 - Batch Size: 128
 - Epochs: 30
-- Learning Rate: default
-- Optimizer: default
-- Image Size: default
+- Learning Rate: 0.001
+- Optimizer: Adam
+- Image Size: 640x640
 
 ##  How to run
 original dataset:
