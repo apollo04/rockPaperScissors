@@ -8,10 +8,10 @@ action result:
 
 | Metric | Original Model | Augmented Model |
 |--------|----------------|-----------------|
-| Precision | 0.75 | 0.82 |
-| Recall | 0.70 | 0.78 |
-| mAP@0.5 | 0.72 | 0.80 |
-| mAP@0.5:0.95 | 0.55 | 0.62 |
+| Precision | 0.94 | 0.88 |
+| Recall | 0.94 | 0.86 |
+| mAP@0.5 | 0.96 | 0.91 |
+| mAP@0.5:0.95 | 0.74 | 0.59 |
  
 
 ## PR & F1 Curve Comparison
