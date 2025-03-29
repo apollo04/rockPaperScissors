@@ -1,0 +1,120 @@
+Overriding model.yaml nc=80 with nc=3
+
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Conv                      [3, 32, 6, 2, 2]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  2    115712  models.common.C3                        [128, 128, 2]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1   1182720  models.common.C3                        [512, 512, 1]
+  9                -1  1    656896  models.common.SPPF                      [512, 512, 5]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1     21576  models.yolo.Detect                      [3, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+YOLOv5s summary: 214 layers, 7027720 parameters, 7027720 gradients, 16.0 GFLOPs
+
+Transferred 342/349 items from yolov5s.pt
+/home/arman/study/roverTask/yolov5/models/common.py:906: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(autocast):
+/home/arman/study/roverTask/yolov5/models/common.py:906: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(autocast):
+[34m[1mAMP: [0mchecks passed ✅
+[34m[1moptimizer:[0m SGD(lr=0.01) with parameter groups 57 weight(decay=0.0), 60 weight(decay=0.001), 60 bias
+[34m[1mtrain: [0mScanning /home/arman/study/roverTask/dataset/train/labels... 6455 images,[0m
+[34m[1mtrain: [0mNew cache created: /home/arman/study/roverTask/dataset/train/labels.cache
+[34m[1mval: [0mScanning /home/arman/study/roverTask/dataset/valid/labels.cache... 576 imag[0m
+
+[34m[1mAutoAnchor: [0m3.93 anchors/target, 1.000 Best Possible Recall (BPR). Current anchors are a good fit to dataset ✅
+Plotting labels to runs/train/exp12/labels.jpg...
+/home/arman/study/roverTask/yolov5/train.py:355: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=amp)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns/train/exp12[0m
+Starting training for 30 epochs...
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+  0%|          | 0/51 [00:00<?, ?it/s]/home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      4.14G     0.1162    0.02753    0.04339        159        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      23.8G     0.1148    0.02755    0.04365        166        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      23.8G     0.1155    0.02731    0.04291        147        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      10.6G     0.1159    0.02721    0.04239        171        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      22.8G     0.1161    0.02695    0.04246        156        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      22.8G      0.116    0.02696    0.04255        189        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      22.8G     0.1155    0.02684     0.0424        179        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G     0.1148    0.02678    0.04246        190        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G      0.114    0.02663     0.0425        182        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G     0.1133    0.02643    0.04237        176        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G     0.1126    0.02618    0.04226        175        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G     0.1116    0.02586    0.04221        154        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G     0.1107     0.0255      0.042        143        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G     0.1097    0.02536    0.04189        189        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G     0.1086    0.02513    0.04174        168        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G     0.1078    0.02486    0.04157        165        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G     0.1068    0.02464    0.04142        163        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G     0.1058    0.02436    0.04128        148        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G     0.1048    0.02412    0.04123        155        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G     0.1037    0.02388      0.041        158        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G     0.1029    0.02363    0.04085        155        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G     0.1018    0.02344    0.04068        162        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G     0.1009    0.02331    0.04047        176        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G    0.09997    0.02311    0.04033        154        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G    0.09898    0.02299    0.04015        169        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G    0.09813    0.02284    0.03994        163        640:  /home/arman/study/roverTask/yolov5/train.py:412: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+       0/29      24.5G    0.09813    0.02284    0.03994        163        640:
+Traceback (most recent call last):
+  File "/home/arman/study/roverTask/yolov5/train.py", line 986, in <module>
+    main(opt)
+  File "/home/arman/study/roverTask/yolov5/train.py", line 688, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "/home/arman/study/roverTask/yolov5/train.py", line 427, in train
+    scaler.step(optimizer)  # optimizer.step
+  File "/home/arman/.local/lib/python3.10/site-packages/torch/amp/grad_scaler.py", line 454, in step
+    retval = self._maybe_opt_step(optimizer, optimizer_state, *args, **kwargs)
+  File "/home/arman/.local/lib/python3.10/site-packages/torch/amp/grad_scaler.py", line 351, in _maybe_opt_step
+    if not sum(v.item() for v in optimizer_state["found_inf_per_device"].values()):
+  File "/home/arman/.local/lib/python3.10/site-packages/torch/amp/grad_scaler.py", line 351, in <genexpr>
+    if not sum(v.item() for v in optimizer_state["found_inf_per_device"].values()):
+KeyboardInterrupt

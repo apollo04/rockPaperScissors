@@ -1,0 +1,15 @@
+{"time":"2025-03-29T16:08:03.91465145+05:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/arman/study/roverTask/yolov5/wandb/run-20250329_160803-j5sf2619/logs/debug-core.log"}
+{"time":"2025-03-29T16:08:04.032914866+05:00","level":"INFO","msg":"created new stream","id":"j5sf2619"}
+{"time":"2025-03-29T16:08:04.033001369+05:00","level":"INFO","msg":"stream: started","id":"j5sf2619"}
+{"time":"2025-03-29T16:08:04.033067126+05:00","level":"INFO","msg":"writer: Do: started","stream_id":"j5sf2619"}
+{"time":"2025-03-29T16:08:04.033138565+05:00","level":"INFO","msg":"handler: started","stream_id":"j5sf2619"}
+{"time":"2025-03-29T16:08:04.033247804+05:00","level":"INFO","msg":"sender: started","stream_id":"j5sf2619"}
+{"time":"2025-03-29T16:08:04.760170304+05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-29T16:08:17.870518443+05:00","level":"INFO","msg":"stream: closing","id":"j5sf2619"}
+{"time":"2025-03-29T16:08:17.870583416+05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-29T16:08:17.871559328+05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-29T16:08:18.668593103+05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-29T16:08:19.151823022+05:00","level":"INFO","msg":"handler: closed","stream_id":"j5sf2619"}
+{"time":"2025-03-29T16:08:19.151897897+05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"j5sf2619"}
+{"time":"2025-03-29T16:08:19.151905905+05:00","level":"INFO","msg":"sender: closed","stream_id":"j5sf2619"}
+{"time":"2025-03-29T16:08:19.152111054+05:00","level":"INFO","msg":"stream: closed","id":"j5sf2619"}

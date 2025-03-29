@@ -1,0 +1,15 @@
+{"time":"2025-03-29T16:10:01.523851197+05:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/arman/study/roverTask/yolov5/wandb/run-20250329_161001-dv6k63fo/logs/debug-core.log"}
+{"time":"2025-03-29T16:10:01.63888073+05:00","level":"INFO","msg":"created new stream","id":"dv6k63fo"}
+{"time":"2025-03-29T16:10:01.638945088+05:00","level":"INFO","msg":"stream: started","id":"dv6k63fo"}
+{"time":"2025-03-29T16:10:01.639033741+05:00","level":"INFO","msg":"writer: Do: started","stream_id":"dv6k63fo"}
+{"time":"2025-03-29T16:10:01.639067637+05:00","level":"INFO","msg":"handler: started","stream_id":"dv6k63fo"}
+{"time":"2025-03-29T16:10:01.639193182+05:00","level":"INFO","msg":"sender: started","stream_id":"dv6k63fo"}
+{"time":"2025-03-29T16:10:02.433710926+05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-29T16:11:10.625775047+05:00","level":"INFO","msg":"stream: closing","id":"dv6k63fo"}
+{"time":"2025-03-29T16:11:10.625826901+05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-29T16:11:10.626823722+05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-29T16:11:11.84272395+05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-29T16:11:12.329199799+05:00","level":"INFO","msg":"handler: closed","stream_id":"dv6k63fo"}
+{"time":"2025-03-29T16:11:12.329242926+05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dv6k63fo"}
+{"time":"2025-03-29T16:11:12.329278879+05:00","level":"INFO","msg":"sender: closed","stream_id":"dv6k63fo"}
+{"time":"2025-03-29T16:11:12.32941907+05:00","level":"INFO","msg":"stream: closed","id":"dv6k63fo"}

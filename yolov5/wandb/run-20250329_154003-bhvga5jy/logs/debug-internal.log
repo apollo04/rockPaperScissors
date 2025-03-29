@@ -1,0 +1,15 @@
+{"time":"2025-03-29T15:40:03.999359406+05:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/arman/study/roverTask/yolov5/wandb/run-20250329_154003-bhvga5jy/logs/debug-core.log"}
+{"time":"2025-03-29T15:40:04.119603525+05:00","level":"INFO","msg":"created new stream","id":"bhvga5jy"}
+{"time":"2025-03-29T15:40:04.119690297+05:00","level":"INFO","msg":"stream: started","id":"bhvga5jy"}
+{"time":"2025-03-29T15:40:04.120055729+05:00","level":"INFO","msg":"handler: started","stream_id":"bhvga5jy"}
+{"time":"2025-03-29T15:40:04.120165886+05:00","level":"INFO","msg":"sender: started","stream_id":"bhvga5jy"}
+{"time":"2025-03-29T15:40:04.120229435+05:00","level":"INFO","msg":"writer: Do: started","stream_id":"bhvga5jy"}
+{"time":"2025-03-29T15:40:04.798164667+05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-29T16:02:25.167558493+05:00","level":"INFO","msg":"stream: closing","id":"bhvga5jy"}
+{"time":"2025-03-29T16:02:25.167602229+05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-29T16:02:25.169545165+05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-29T16:02:26.72612072+05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-29T16:02:27.320899488+05:00","level":"INFO","msg":"handler: closed","stream_id":"bhvga5jy"}
+{"time":"2025-03-29T16:02:27.320984752+05:00","level":"INFO","msg":"sender: closed","stream_id":"bhvga5jy"}
+{"time":"2025-03-29T16:02:27.320965788+05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"bhvga5jy"}
+{"time":"2025-03-29T16:02:27.321122254+05:00","level":"INFO","msg":"stream: closed","id":"bhvga5jy"}

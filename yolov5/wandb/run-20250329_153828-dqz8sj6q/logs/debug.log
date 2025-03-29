@@ -1,0 +1,41 @@
+2025-03-29 15:38:28,370 INFO    MainThread:3695522 [wandb_setup.py:_flush():67] Current SDK version is 0.19.7
+2025-03-29 15:38:28,370 INFO    MainThread:3695522 [wandb_setup.py:_flush():67] Configure stats pid to 3695522
+2025-03-29 15:38:28,370 INFO    MainThread:3695522 [wandb_setup.py:_flush():67] Loading settings from /home/arman/.config/wandb/settings
+2025-03-29 15:38:28,370 INFO    MainThread:3695522 [wandb_setup.py:_flush():67] Loading settings from /home/arman/study/roverTask/yolov5/wandb/settings
+2025-03-29 15:38:28,370 INFO    MainThread:3695522 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-29 15:38:28,370 INFO    MainThread:3695522 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/arman/study/roverTask/yolov5/wandb/run-20250329_153828-dqz8sj6q/logs/debug.log
+2025-03-29 15:38:28,370 INFO    MainThread:3695522 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/arman/study/roverTask/yolov5/wandb/run-20250329_153828-dqz8sj6q/logs/debug-internal.log
+2025-03-29 15:38:28,370 INFO    MainThread:3695522 [wandb_init.py:init():761] calling init triggers
+2025-03-29 15:38:28,370 INFO    MainThread:3695522 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'weights': 'yolov5s.pt', 'cfg': 'models/yolov5s.yaml', 'data': '../dataset/data.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.01, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0, 'copy_paste': 0.0}, 'epochs': 50, 'batch_size': 64, 'imgsz': 640, 'rect': False, 'resume': False, 'nosave': False, 'noval': False, 'noautoanchor': False, 'noplots': False, 'evolve': None, 'evolve_population': PosixPath('data/hyps'), 'resume_evolve': None, 'bucket': '', 'cache': None, 'image_weights': False, 'device': '1', 'multi_scale': False, 'single_cls': False, 'optimizer': 'SGD', 'sync_bn': False, 'workers': 8, 'project': 'runs/train', 'name': 'exp', 'exist_ok': False, 'quad': False, 'cos_lr': False, 'label_smoothing': 0.0, 'patience': 100, 'freeze': [0], 'save_period': -1, 'seed': 0, 'local_rank': -1, 'entity': None, 'upload_dataset': False, 'bbox_interval': -1, 'artifact_alias': 'latest', 'ndjson_console': False, 'ndjson_file': False, 'save_dir': 'runs/train/exp10', '_wandb': {}}
+2025-03-29 15:38:28,370 INFO    MainThread:3695522 [wandb_init.py:init():784] starting backend
+2025-03-29 15:38:28,370 INFO    MainThread:3695522 [wandb_init.py:init():788] sending inform_init request
+2025-03-29 15:38:28,376 INFO    MainThread:3695522 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-03-29 15:38:28,377 INFO    MainThread:3695522 [wandb_init.py:init():803] backend started and connected
+2025-03-29 15:38:28,379 INFO    MainThread:3695522 [wandb_init.py:init():896] updated telemetry
+2025-03-29 15:38:28,387 INFO    MainThread:3695522 [wandb_init.py:init():920] communicating run to backend with 90.0 second timeout
+2025-03-29 15:38:29,273 INFO    MainThread:3695522 [wandb_init.py:init():995] starting run threads in backend
+2025-03-29 15:38:29,562 INFO    MainThread:3695522 [wandb_run.py:_console_start():2377] atexit reg
+2025-03-29 15:38:29,563 INFO    MainThread:3695522 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-29 15:38:29,566 INFO    MainThread:3695522 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-29 15:38:29,566 INFO    MainThread:3695522 [wandb_run.py:_redirect():2317] Redirects installed.
+2025-03-29 15:38:29,567 INFO    MainThread:3695522 [wandb_init.py:init():1037] run started, returning control to user process
+2025-03-29 15:39:07,091 WARNING MsgRouterThr:3695522 [router.py:message_loop():77] message_loop has been closed
+Traceback (most recent call last):
+  File "/home/arman/.conda/envs/yolo/lib/python3.10/site-packages/wandb/sdk/interface/router_sock.py", line 28, in _read_message
+    resp = self._sock_client.read_server_response(timeout=1)
+  File "/home/arman/.conda/envs/yolo/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 285, in read_server_response
+    data = self._read_packet_bytes(timeout=timeout)
+  File "/home/arman/.conda/envs/yolo/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 270, in _read_packet_bytes
+    raise SockClientClosedError
+wandb.sdk.lib.sock_client.SockClientClosedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/arman/.conda/envs/yolo/lib/python3.10/site-packages/wandb/sdk/interface/router.py", line 70, in message_loop
+    msg = self._read_message()
+  File "/home/arman/.conda/envs/yolo/lib/python3.10/site-packages/wandb/sdk/interface/router_sock.py", line 30, in _read_message
+    raise MessageRouterClosedError from e
+wandb.sdk.interface.router.MessageRouterClosedError
+2025-03-29 15:39:07,092 INFO    MsgRouterThr:3695522 [mailbox.py:close():115] Closing mailbox, abandoning 1 handles.

@@ -1,0 +1,10 @@
+{"time":"2025-03-29T16:11:40.577019233+05:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/arman/study/roverTask/yolov5/wandb/run-20250329_161140-c1at3fr1/logs/debug-core.log"}
+{"time":"2025-03-29T16:11:40.693857026+05:00","level":"INFO","msg":"created new stream","id":"c1at3fr1"}
+{"time":"2025-03-29T16:11:40.693924899+05:00","level":"INFO","msg":"stream: started","id":"c1at3fr1"}
+{"time":"2025-03-29T16:11:40.694031721+05:00","level":"INFO","msg":"writer: Do: started","stream_id":"c1at3fr1"}
+{"time":"2025-03-29T16:11:40.694065337+05:00","level":"INFO","msg":"handler: started","stream_id":"c1at3fr1"}
+{"time":"2025-03-29T16:11:40.694140349+05:00","level":"INFO","msg":"sender: started","stream_id":"c1at3fr1"}
+{"time":"2025-03-29T16:11:41.410499716+05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-29T16:13:25.656771732+05:00","level":"INFO","msg":"stream: closing","id":"c1at3fr1"}
+{"time":"2025-03-29T16:13:25.656812699+05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-29T16:13:25.65763156+05:00","level":"INFO","msg":"Stopped system monitor"}

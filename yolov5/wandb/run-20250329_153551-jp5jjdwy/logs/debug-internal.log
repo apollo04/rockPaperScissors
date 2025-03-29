@@ -1,0 +1,15 @@
+{"time":"2025-03-29T15:35:51.454123738+05:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/arman/study/roverTask/yolov5/wandb/run-20250329_153551-jp5jjdwy/logs/debug-core.log"}
+{"time":"2025-03-29T15:35:51.686948896+05:00","level":"INFO","msg":"created new stream","id":"jp5jjdwy"}
+{"time":"2025-03-29T15:35:51.687036901+05:00","level":"INFO","msg":"stream: started","id":"jp5jjdwy"}
+{"time":"2025-03-29T15:35:51.687078994+05:00","level":"INFO","msg":"writer: Do: started","stream_id":"jp5jjdwy"}
+{"time":"2025-03-29T15:35:51.687180822+05:00","level":"INFO","msg":"sender: started","stream_id":"jp5jjdwy"}
+{"time":"2025-03-29T15:35:51.687195806+05:00","level":"INFO","msg":"handler: started","stream_id":"jp5jjdwy"}
+{"time":"2025-03-29T15:35:52.812425522+05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-29T15:35:53.293535861+05:00","level":"INFO","msg":"stream: closing","id":"jp5jjdwy"}
+{"time":"2025-03-29T15:35:53.293592065+05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-29T15:35:53.294813265+05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-29T15:35:54.992594208+05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-29T15:35:55.396024726+05:00","level":"INFO","msg":"handler: closed","stream_id":"jp5jjdwy"}
+{"time":"2025-03-29T15:35:55.396062439+05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jp5jjdwy"}
+{"time":"2025-03-29T15:35:55.396086428+05:00","level":"INFO","msg":"sender: closed","stream_id":"jp5jjdwy"}
+{"time":"2025-03-29T15:35:55.396301806+05:00","level":"INFO","msg":"stream: closed","id":"jp5jjdwy"}

@@ -1,0 +1,15 @@
+{"time":"2025-03-29T16:08:49.180704162+05:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/arman/study/roverTask/yolov5/wandb/run-20250329_160849-qiia45f0/logs/debug-core.log"}
+{"time":"2025-03-29T16:08:49.301899541+05:00","level":"INFO","msg":"created new stream","id":"qiia45f0"}
+{"time":"2025-03-29T16:08:49.302009576+05:00","level":"INFO","msg":"stream: started","id":"qiia45f0"}
+{"time":"2025-03-29T16:08:49.302129663+05:00","level":"INFO","msg":"writer: Do: started","stream_id":"qiia45f0"}
+{"time":"2025-03-29T16:08:49.302156772+05:00","level":"INFO","msg":"sender: started","stream_id":"qiia45f0"}
+{"time":"2025-03-29T16:08:49.302218501+05:00","level":"INFO","msg":"handler: started","stream_id":"qiia45f0"}
+{"time":"2025-03-29T16:08:50.022027677+05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-29T16:09:02.036630183+05:00","level":"INFO","msg":"stream: closing","id":"qiia45f0"}
+{"time":"2025-03-29T16:09:02.036671509+05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-29T16:09:02.0377774+05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-29T16:09:03.233957225+05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-29T16:09:03.632775868+05:00","level":"INFO","msg":"handler: closed","stream_id":"qiia45f0"}
+{"time":"2025-03-29T16:09:03.632861864+05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"qiia45f0"}
+{"time":"2025-03-29T16:09:03.632874581+05:00","level":"INFO","msg":"sender: closed","stream_id":"qiia45f0"}
+{"time":"2025-03-29T16:09:03.633082743+05:00","level":"INFO","msg":"stream: closed","id":"qiia45f0"}
